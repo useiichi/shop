@@ -6,5 +6,9 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Spree::Core::Engine.load_seed if defined?(Spree::Core)
-Spree::Auth::Engine.load_seed if defined?(Spree::Auth)
+
+Spree::Country.create!(iso_name:"JAPAN", name:"日本", states_required: true)
+
+
+#Spree::Core::Engine.load_seed if defined?(Spree::Core)
+#Spree::Auth::Engine.load_seed if defined?(Spree::Auth)
