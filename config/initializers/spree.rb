@@ -7,6 +7,9 @@ Spree.config do |config|
   # Default currency for new sites
   config.currency = "JPY"
 
+  country = Spree::Country.find_by_name('日本')
+  config.default_country_id = country.id if country.present?
+
   # from address for transactional emails
   config.mails_from = "webmaster@iseisaku.com"
 
