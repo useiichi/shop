@@ -2,12 +2,4 @@
 
 require_relative 'config/environment'
 
-RAILS_RELATIVE_URL_ROOT='/shop'
-
-if RAILS_RELATIVE_URL_ROOT then
-  map RAILS_RELATIVE_URL_ROOT do
-    run Rails.application
-  end
-else
-  run Rails.application
-end
+run Rails.application
