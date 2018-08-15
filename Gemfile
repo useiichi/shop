@@ -65,3 +65,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'solidus', :path => '/var/www/solidus'
 gem 'solidus_auth_devise'
 gem 'solidus_i18n'
+
+gem 'paperclip-gcs'
+
