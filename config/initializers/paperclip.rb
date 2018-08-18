@@ -5,8 +5,8 @@ if Rails.env.production?
   
   Paperclip::Attachment.default_options[:storage] = :gcs
   Paperclip::Attachment.default_options[:gcs_bucket] = "solidus"
-  Paperclip::Attachment.default_options[:url] = ":gcs_path_url"
-  Paperclip::Attachment.default_options[:path] = "images/:id/:style/:filename"
+  Paperclip::Attachment.default_options[:url] = "https://hanbai.iseisaku.com/"#":gcs_path_url"
+  Paperclip::Attachment.default_options[:path] = "/products/:id/:style/:basename.:extension"#"products/:id/:style/:filename"
   Paperclip::Attachment.default_options[:gcs_credentials] = {
       project: "root-talon-161808",#ENV["GCS_PROJECT"],
       keyfile: "/var/www/gcs_keyfile",#ENV["GCS_KEYFILE"],
